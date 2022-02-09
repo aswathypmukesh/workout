@@ -119,6 +119,25 @@
 // console.log(a);
 // console.log(b);
 
+// using for loop
+
+const a = [ 10, 20, 30, 40, 50];
+const b = [15, 25, 35, 45, 55];
+function swap() {
+
+  for (let i = 0; i < a.length; i++) {
+    for (let j = 0; j <= b.length; j++) {
+        let temp = a[i]; 
+        a[i] = b[j]; 
+        b[j] = temp; 
+    };
+  };
+  console.log(a)
+  console.log(b)
+};
+
+swap();
+
 // no:11
 
 // const a = [11, 20, 34, 50, 33];
@@ -148,6 +167,23 @@
 
 // console.log(num);
 
+// using for loop
+
+let a = [20, 10, 50, 30, 40];
+function sortGreatest(a) {
+
+  for (let i = 0; i < a.length; i++) {
+    for (let j = i; j < a.length; j++) {
+      if (a[i] < a[j]) {
+        let temp = a[i]; 
+        a[i] = a[j]; 
+        a[j] = temp; 
+      };
+    };
+  };
+  console.log(a)};
+sortGreatest(a);
+
 // no:13
 
 // function checkPalindrome(string) {
@@ -166,14 +202,14 @@
 
 // no:14
 
-var a = [1,2,3,4];
-var b = [5,6,7,8];
-var c = [];
+// var a = [1,2,3,4];
+// var b = [5,6,7,8];
+// var c = [];
   
-  for (var i = 0; i < (a.length, b.length); i++) {
-    c.push((a[i]) + (b[i]));
-  }
-  console.log(c);
+//   for (var i = 0; i < (a.length, b.length); i++) {
+//     c.push((a[i]) + (b[i]));
+//   }
+//   console.log(c);
 
 // no:15
 
@@ -189,7 +225,7 @@ var c = [];
 
 // no:16
 
-// var n = 45;
+// var n = 11;
 // let isPrime = true;
 
 //  if (n > 1) {
@@ -209,39 +245,38 @@ var c = [];
 
 // no:17
 
-// var a=2;
-// var b=2;
-// var result = 0;
-// function addition(){
-//     result = a + b;
-//     console.log(result);
-// }
-// addition()
-// function substraction(){
-//   result = a - b;
-//   console.log(result);
-
-// }
-// substraction()
-// function multiplication(){
-//   result = a * b;
-//   console.log(result);
-// }
-// multiplication()
-// function division(){
-//   result = a / b;
-//   console.log(result);
-// }
-// division()
+var a=2;
+var b=2;
+var result = 0;
+function addition(num1,num2){
+    result = num1 + num2;
+    console.log(result);
+}
+addition(a,b)
+function substraction(num1,num2){
+  result = num1 - num2;
+  console.log(result);
+}
+substraction(a,b)
+function multiplication(num1,num2){
+  result = num1 * num2;
+  console.log(result);
+}
+multiplication(a,b)
+function division(num1,num2){
+  result = num1 / num2;
+  console.log(result);
+}
+division(a,b)
 
 
 // no:18
 
 // function grade() {
-//   var wt = 81;
+//   var wt = 100;
 //   var le = 68;
 //   var as = 92; 
-//   var per  = (81*70)/100 + (68*20)/100 + (92*10)/100;
+//   var per  = (wt*70)/100 + (le*20)/100 + (as*10)/100;
 //   var grade;
 //   if (per>=35 && per<=60) {
 //   grade = 'F';
@@ -325,17 +360,17 @@ var c = [];
 
 // no:22
 
-// var a = [1,2,3,4];
-// var b = [5,6,7,8];
-// var c = [];
-// function sumArray(c) {
+var a = [1,2,3,4];
+var b = [5,6,7,8];
+var c = [];
+function sumArray(c) {
   
-//   for (var i = 0; i < (a.length, b.length); i++) {
-//     c.push((a[i]) + (b[i]));
-//   }
-//   console.log(c);
-// }
-// sumArray(c);
+  for (var i = 0; i < a.length; i++) {
+    c.push((a[i]) + (b[i]));
+  }
+  console.log(c);
+}
+sumArray(c);
 
 // no:23
 
